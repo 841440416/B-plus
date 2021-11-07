@@ -1,0 +1,16 @@
+{
+  "name": "@b-plus/play",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^1.9.4",
+    "vite": "^2.6.13"
+  }
+}
