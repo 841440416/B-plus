@@ -47,7 +47,7 @@ export const genEntryTypes = async () => {
       await fs.mkdir(path.dirname(filepath), { recursive: true });
       await fs.writeFile(
         filepath,
-        outputFile.getText().replaceAll("@b-plus", "."),
+        outputFile.getText().replace(/@b-plus/g, "."),
         "utf8"
       );
     }

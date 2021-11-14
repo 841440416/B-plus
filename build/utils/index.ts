@@ -21,9 +21,9 @@ export const run = async (command: string) => {
 // 重写@b-plus路径
 export const pathRewriter = (format)=>{
   return (id:string)=>{
-    console.log('id开始---', id, format)
-    id = id.replaceAll('@b-plus',`b-plus/${format}`);
-    console.log('id结束---', id)
+    // console.log('id开始---', id, format)
+    id = id.replace(/@b-plus/g,`b-plus/${format}`); //建议使用replace替换replaceAll（兼容问题）
+    // console.log('id结束---', id)
     return id
   }
 }
