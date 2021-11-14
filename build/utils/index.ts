@@ -18,6 +18,7 @@ export const run = async (command: string) => {
   });
 };
 
+// 重写@b-plus路径
 export const pathRewriter = (format)=>{
   return (id:string)=>{
     id = id.replaceAll('@b-plus',`b-plus/${format}`);

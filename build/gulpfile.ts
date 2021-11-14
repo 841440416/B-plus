@@ -5,6 +5,8 @@ export default series(
   parallel(
     withTaskName("buildPackages", () =>
       run("pnpm run --filter ./packages --parallel build")
-    )
+    ),
+    withTaskName('buildFullComponent',()=> run('pnpm run build buildFullComponent')),
   )
 );
+export * from './full-component'

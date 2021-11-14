@@ -3,7 +3,7 @@
     <slot></slot>
   </i>
 </template>
-<script>
+<script lang="ts">
 import { defineComponent, computed } from "vue";
 import { iconProps } from "./icon";
 
