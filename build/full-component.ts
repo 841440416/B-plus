@@ -44,6 +44,10 @@ const buildFull = async () => {
   return Promise.all(buildConfig.map(config=>bundle.write(config as OutputOptions)))
 };
 
+/**
+ * 打包组件库入口 b-plus
+ * @returns 
+ */
 async function buildEntry() {
   const entryFiles = await fs.readdir(bpRoot, { withFileTypes: true });
   const entryPoints = entryFiles
@@ -68,8 +72,6 @@ async function buildEntry() {
   );
 }
 
-
-
-export const buildFullComponent = parallel(buildFull);
+export const buildFullComponent = parallel(buildFull, buildEntry);
 
 // gulp适合流程控制 和 代码的转义 没有打包的功能

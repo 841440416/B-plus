@@ -25,6 +25,7 @@ importers:
       rollup-plugin-vue: ^6.0.0
       sass: ^1.43.4
       sucrase: ^3.20.3
+      ts-morph: ^12.2.0
       typescript: ^4.4.4
       vue: ^3.2.21
     dependencies:
@@ -50,6 +51,7 @@ importers:
       rollup-plugin-vue: registry.npmmirror.com/rollup-plugin-vue/6.0.0
       sass: registry.npmmirror.com/sass/1.43.4
       sucrase: registry.npmmirror.com/sucrase/3.20.3
+      ts-morph: registry.npmmirror.com/ts-morph/12.2.0
       typescript: registry.npmmirror.com/typescript/4.4.4
       vue: registry.npmmirror.com/vue/3.2.21
 
@@ -1766,6 +1768,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  registry.nlark.com/path-browserify/1.0.1:
+    resolution: {integrity: sha1-2YRUqcN1PVeQhg8W9ohnueRr4f0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/path-browserify/download/path-browserify-1.0.1.tgz}
+    name: path-browserify
+    version: 1.0.1
+    dev: true
+
   registry.nlark.com/path-dirname/1.0.2:
     resolution: {integrity: sha1-zDPSTVJeCZpTiMAzbG4yuRYGCeA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/path-dirname/download/path-dirname-1.0.2.tgz}
     name: path-dirname
@@ -2659,6 +2667,17 @@ packages:
       rollup: registry.npmmirror.com/rollup/2.60.0
     dev: true
 
+  registry.npmmirror.com/@ts-morph/common/0.11.1:
+    resolution: {integrity: sha1-KBryoGQrGTVNiqB6DVDf20qoFk4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ts-morph/common/download/@ts-morph/common-0.11.1.tgz}
+    name: '@ts-morph/common'
+    version: 0.11.1
+    dependencies:
+      fast-glob: registry.nlark.com/fast-glob/3.2.7
+      minimatch: registry.npmmirror.com/minimatch/3.0.4
+      mkdirp: registry.npmmirror.com/mkdirp/1.0.4
+      path-browserify: registry.nlark.com/path-browserify/1.0.1
+    dev: true
+
   registry.npmmirror.com/@types/clean-css/4.2.5:
     resolution: {integrity: sha1-ac5izBNVfJDKQEYBM/Zy3FLOr4k=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/clean-css/download/@types/clean-css-4.2.5.tgz}
     name: '@types/clean-css'
@@ -3088,6 +3107,12 @@ packages:
     engines: {node: '>= 4.0'}
     dependencies:
       source-map: registry.nlark.com/source-map/0.6.1
+    dev: true
+
+  registry.npmmirror.com/code-block-writer/10.1.1:
+    resolution: {integrity: sha1-rVaE7Uv7KweDyLExKBroTuZApC8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/code-block-writer/download/code-block-writer-10.1.1.tgz}
+    name: code-block-writer
+    version: 10.1.1
     dev: true
 
   registry.npmmirror.com/code-point-at/1.1.0:
@@ -3765,6 +3790,14 @@ packages:
       brace-expansion: registry.nlark.com/brace-expansion/1.1.11
     dev: true
 
+  registry.npmmirror.com/mkdirp/1.0.4:
+    resolution: {integrity: sha1-PrXtYmInVteaXw4qIh3+utdcL34=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mkdirp/download/mkdirp-1.0.4.tgz?cache=0&sync_timestamp=1636333577061&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmkdirp%2Fdownload%2Fmkdirp-1.0.4.tgz}
+    name: mkdirp
+    version: 1.0.4
+    engines: {node: '>=10'}
+    hasBin: true
+    dev: true
+
   registry.npmmirror.com/ms/2.0.0:
     resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ms/download/ms-2.0.0.tgz}
     name: ms
@@ -4115,6 +4148,15 @@ packages:
     resolution: {integrity: sha1-eE/T1nlyK8EDsbS4AwvN212yppk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ts-interface-checker/download/ts-interface-checker-0.1.13.tgz}
     name: ts-interface-checker
     version: 0.1.13
+    dev: true
+
+  registry.npmmirror.com/ts-morph/12.2.0:
+    resolution: {integrity: sha1-MzIxnOzUSv8Le0EPH+OWN0mbGhs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ts-morph/download/ts-morph-12.2.0.tgz}
+    name: ts-morph
+    version: 12.2.0
+    dependencies:
+      '@ts-morph/common': registry.npmmirror.com/@ts-morph/common/0.11.1
+      code-block-writer: registry.npmmirror.com/code-block-writer/10.1.1
     dev: true
 
   registry.npmmirror.com/typescript/4.4.4:
