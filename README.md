@@ -11,9 +11,9 @@ pnpm搭建的Vue3组件库💥
 - tsconfig ts配置
 
 ### packages
-    > components 存放所有的组件 通过index.ts导出所有的组件
-    > theme-chalk做样式的BEM （后续控制样式）
-    > utils存放着多个模块间的公共方法
+- components 存放所有的组件 通过index.ts导出所有的组件
+- theme-chalk做样式的BEM （后续控制样式）
+- utils存放着多个模块间的公共方法
 
 ### build
 - build目前我们实现了打包样式 、 工具方法
@@ -22,10 +22,10 @@ pnpm搭建的Vue3组件库💥
     2. 给组件入口打包 -> `index.ts`
     3. 给引入的总入口打包 -> `b-plus/index.ts`
 
-## dist目录打包出的整体结果
+### dist目录打包出的整体结果
 - es/lib两种规范
 - theme-chalk
 - 最终发布的模块就是dist模块 -> b-plus
 
-## b-plus就是我们组件库的整合入口
+### b-plus就是我们组件库的整合入口
 

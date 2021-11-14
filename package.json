@@ -2,7 +2,7 @@
   "name": "b-plus",
   "version": "1.0.0",
   "description": "vue3组件库",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "pnpm -C play dev",
     "build": "gulp -f build/gulpfile.ts",
@@ -29,6 +29,7 @@
     "@types/gulp-clean-css": "^4.3.0",
     "@types/gulp-sass": "^5.0.0",
     "@types/sass": "^1.43.0",
+    "@vue/compiler-sfc": "^3.2.21",
     "fast-glob": "^3.2.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",

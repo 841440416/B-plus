@@ -5,4 +5,3 @@ export {
   BIcon
 }
 export default BIcon; // 导出组件
-export * from './src/icon';// 导出组件的属性类型

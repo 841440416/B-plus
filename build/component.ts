@@ -73,7 +73,7 @@ async function genTypes() {
     onlyFiles: true,
     absolute: true,
   });
-
+  // console.log('filePaths---', filePaths)
   const sourceFiles: SourceFile[] = [];
 
   await Promise.all(
@@ -93,6 +93,7 @@ async function genTypes() {
       }
     })
   );
+  // console.log('sourceFiles---', sourceFiles)
   await project.emit({
     // 默认是放到内存中的
     emitOnlyDtsFiles: true,
@@ -100,6 +101,7 @@ async function genTypes() {
 
   const tasks = sourceFiles.map(async (sourceFile: any) => {
     const emitOutput = sourceFile.getEmitOutput();
+    console.log('emitOutput---', emitOutput)
     const tasks = emitOutput.getOutputFiles().map(async (outputFile: any) => {
       const filepath = outputFile.getFilePath();
       await fs.mkdir(path.dirname(filepath), {

@@ -35,6 +35,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+play/node_modules
 
 #dist files
 dist/
@@ -62,4 +63,3 @@ typings/
 
 # next.js build output
 .next
-play/node_modules
