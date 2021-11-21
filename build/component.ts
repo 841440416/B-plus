@@ -94,14 +94,18 @@ async function genTypes() {
     })
   );
   // console.log('sourceFiles---', sourceFiles)
-  await project.emit({
+  const emitResult = await project.emit({
     // 默认是放到内存中的
     emitOnlyDtsFiles: true,
   });
+  // console.log('emitResult---', emitResult);
+  for (const diagnostic of emitResult.getDiagnostics()) {
+    console.log('diagnostic---', diagnostic.getMessageText());
+  }
 
   const tasks = sourceFiles.map(async (sourceFile: any) => {
     const emitOutput = sourceFile.getEmitOutput();
-    console.log('emitOutput---', emitOutput)
+    // console.log('emitOutput---', emitOutput)
     const tasks = emitOutput.getOutputFiles().map(async (outputFile: any) => {
       const filepath = outputFile.getFilePath();
       await fs.mkdir(path.dirname(filepath), {

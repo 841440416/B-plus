@@ -14,7 +14,7 @@ export const buildPackages = (dirname: string, name: string) => {
   // umd 是在浏览器中用的
   // 可以用rollup， 这个逻辑只是让ts-> js即可
   const tasks = Object.entries(buildConfig).map(([module, config]) => {
-    const output = path.resolve(dirname, config.output.name);
+    const output = path.resolve(outDir, config.output.name, name);
     return series(
       withTaskName(`buld:${dirname}`, () => {
         const tsConfig = path.resolve(projectRoot, "tsconfig.json"); // ts的配置文件的路径
@@ -28,13 +28,6 @@ export const buildPackages = (dirname: string, name: string) => {
             })()
           )
           .pipe(dest(output));
-      }),
-      withTaskName(`copy:${dirname}`, () => {
-        // 放到es-> utils 和 lib -> utils
-        // 将utils 模块拷贝到dist 目录下的es目录和lib目录
-        return src(`${output}/**`).pipe(
-          dest(path.resolve(outDir, config.output.name, name))
-        );
       })
     );
   });
