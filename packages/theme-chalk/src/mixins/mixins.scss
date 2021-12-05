@@ -1,3 +1,20 @@
 // 声明公共的sass方法
 @use 'config' as *;
 @forward 'config';
+
+// BEM
+@mixin b($block) {
+  $B: $namespace + '-' + $block !global;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+@mixin when($state) {
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
