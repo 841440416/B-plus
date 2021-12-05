@@ -119,9 +119,11 @@ export function buildProp<
 
           if (values) {
             allowedValues = [...values, defaultValue]
-            valid ||= allowedValues.includes(val)
+            // valid ||= allowedValues.includes(val)
+            if (!valid) valid = allowedValues.includes(val)
           }
-          if (validator) valid ||= validator(val)
+          // if (validator) valid ||= validator(val)
+          if (validator && !valid) valid = validator(val)
 
           if (!valid && allowedValues.length > 0) {
             const allowValuesText = [...new Set(allowedValues)]
