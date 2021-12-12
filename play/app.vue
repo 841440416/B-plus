@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import { Loading } from "@element-plus/icons";
+import { Loading } from '@element-plus/icons-vue';
 </script>
