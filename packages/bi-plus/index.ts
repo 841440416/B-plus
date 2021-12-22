@@ -1,5 +1,5 @@
 import type { App } from "vue";
-import { BIcon } from "@b-plus/components";
+import { BIcon } from "@bi-plus/components";
 const components = [BIcon];
 const install = (app: App) => {
   //每个组件都提供了install方法
@@ -8,4 +8,4 @@ const install = (app: App) => {
 export default {
   install,
 };
-export * from "@b-plus/components";
+export * from "@bi-plus/components";

@@ -53,9 +53,9 @@
     "vue": "^3.2.21"
   },
   "dependencies": {
-    "@b-plus/components": "workspace:^1.0.0",
-    "@b-plus/theme-chalk": "workspace:^1.0.0",
-    "@b-plus/utils": "workspace:^1.0.0",
+    "@bi-plus/components": "workspace:^1.0.0",
+    "@bi-plus/theme-chalk": "workspace:^1.0.0",
+    "@bi-plus/utils": "workspace:^1.0.0",
     "@element-plus/icons-vue": "^0.2.4"
   }
 }

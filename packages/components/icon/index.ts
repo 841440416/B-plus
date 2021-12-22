@@ -1,5 +1,5 @@
 import Icon from './src/icon.vue';
-import { withInstall } from '@b-plus/utils/with-install'; 
+import { withInstall } from '@bi-plus/utils/with-install'; 
 
 export const BIcon = withInstall(Icon);
 export default BIcon; // 导出组件

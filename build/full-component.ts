@@ -45,7 +45,7 @@ const buildFull = async () => {
 };
 
 /**
- * 打包组件库入口 b-plus
+ * 打包组件库入口 bi-plus
  * @returns 
  */
 async function buildEntry() {
@@ -58,7 +58,7 @@ async function buildEntry() {
   const config = {
     input: entryPoints,
     plugins: [nodeResolve(), vue(), typescript()],
-    external: (id: string) => /^vue/.test(id) || /^@b-plus/.test(id),
+    external: (id: string) => /^vue/.test(id) || /^@bi-plus/.test(id),
   };
   const bundle = await rollup(config);
   return Promise.all(

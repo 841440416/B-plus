@@ -8,7 +8,7 @@ import { run, withTaskName } from "./utils";
 import { buildConfig } from "./utils/config";
 
 /**
- * 生成组件入口b-plus的声明文件
+ * 生成组件入口bi-plus的声明文件
  */
 export const genEntryTypes = async () => {
   const files = await glob("*.ts", {
@@ -47,7 +47,7 @@ export const genEntryTypes = async () => {
       await fs.mkdir(path.dirname(filepath), { recursive: true });
       await fs.writeFile(
         filepath,
-        outputFile.getText().replace(/@b-plus/g, "."),
+        outputFile.getText().replace(/@bi-plus/g, "."),
         "utf8"
       );
     }

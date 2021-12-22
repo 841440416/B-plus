@@ -5,7 +5,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, computed } from "vue";
-import { isNumber, isString } from "@b-plus/utils/util";
+import { isNumber, isString } from "@bi-plus/utils/util";
 import { iconProps } from "./icon";
 
 import type { CSSProperties } from "vue";

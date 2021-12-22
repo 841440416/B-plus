@@ -23,7 +23,7 @@ export default series(
     ), // 打包完整组件
     withTaskName("buildComponent", () => run("pnpm run build buildComponent")) // 打包单个组件，依次打包，按需引入
   ),
-  parallel(genTypes, copySourceCode()) // 打包组件库入口 b-plus 声明文件
+  parallel(genTypes, copySourceCode()) // 打包组件库入口 bi-plus 声明文件
 );
 
 //  这是一个任务

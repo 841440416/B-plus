@@ -1,4 +1,4 @@
-# B-plus
+# Bi-plus
 pnpm搭建的Vue3组件库💥
 
 ## 说明
@@ -20,12 +20,12 @@ pnpm搭建的Vue3组件库💥
   - 打包components内每个组件，需要做以下
     1. 给每个组件生成.d.ts声明文件
     2. 给组件入口打包 -> `index.ts`
-    3. 给引入的总入口打包 -> `b-plus/index.ts`
+    3. 给引入的总入口打包 -> `bi-plus/index.ts`
 
 ### dist目录打包出的整体结果
 - es/lib两种规范
 - theme-chalk
-- 最终发布的模块就是dist模块 -> b-plus
+- 最终发布的模块就是dist模块 -> bi-plus
 
-### b-plus就是我们组件库的整合入口
+### bi-plus就是我们组件库的整合入口
 

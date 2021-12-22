@@ -1,6 +1,6 @@
 // 这里主要放置的是组件的props， 及一些公共的方法
 import type { ExtractPropTypes } from "vue";
-import { definePropType, buildProps } from '@b-plus/utils/props'
+import { definePropType, buildProps } from '@bi-plus/utils/props'
 
 export const iconProps = buildProps({
   size: {
