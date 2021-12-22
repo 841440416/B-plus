@@ -1,6 +1,6 @@
 {
-  "name": "b-plus",
-  "version": "1.0.0",
+  "name": "bi-plus",
+  "version": "1.0.4",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
